@@ -259,15 +259,15 @@ class App extends Component {
       );
     }
 
-    const Row = ({ row, gameplay }) => {
+    const Line = ({ row, gameplay }) => {
       return (
         <tr className='circle'>
-          {row.map((cell, i) => <Cell key={i} value={cell} columnIndex={i} gameplay={gameplay} />)}
+          {row.map((square, i) => <Square key={i} value={square} columnIndex={i} gameplay={gameplay} />)}
         </tr>
       );
     };
 
-    const Cell = ({ value, columnIndex, gameplay }) => {
+    const Square = ({ value, columnIndex, gameplay }) => {
       let color = 'white';
       if (value === '😈') {
         color = 'red';
@@ -276,7 +276,7 @@ class App extends Component {
       }
       return (
         <td>
-          <div className="cell" onClick={() => {gameplay(columnIndex)}}>
+          <div className="square" onClick={() => {gameplay(columnIndex)}}>
             <div className={color}></div>
           </div>
         </td>
@@ -291,7 +291,7 @@ class App extends Component {
           </header>
           <table >
             <tbody>
-              {this.state.board.map((row, i) => (<Row key={i} row={row} gameplay={this.gameplay} />))}
+              {this.state.board.map((row, i) => (<Line key={i} row={row} gameplay={this.gameplay} />))}
             </tbody>
           </table>
           <button className="button" onClick={ () => { this.createTable(); this.onSubmitRed(); this.onSubmitYellow(); this.onSubmitDraw();  }} >Reset Game</button>
