@@ -1,0 +1,215 @@
+body {
+  background-image:url("angelvsdemon.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(194, 194, 194);
+}
+
+table {
+  margin-top: 10px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+.button {
+  border:  1px solid black;
+  border-radius: 40px;
+  background-color: white;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  margin-top: 5px;
+  border: 3px solid white;
+  height: 30px;
+  width: 300px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  text-align: center;
+}
+
+.divButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #50C8FF;
+  color: #303030;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+  background-color: black;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+
+.circles {
+  margin: -40px 0 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.messageRed {
+  color: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  height: 400px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  opacity: 0.7;
+  margin-top: 200px;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+.messageYellow {
+  color: yellow;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  height: 400px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  opacity: 0.7;
+  margin-top: 200px;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+.messageDraw {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  height: 400px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  opacity: 0.7;
+  margin-top: 200px;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+.message {
+  text-align: center;
+  font-size: 17px;
+  color: white;
+}
+
+.playerTurn {
+  font-size: 30px;
+  text-align: center;
+}
+
+.white {
+  height: 60px;
+  width: 60px;
+  background-color: #FFF;
+  border-radius: 100px;
+}
+
+.red {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
+
+.yellow {
+  height: 60px;
+  width: 60px;
+  background-color: yellow;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
+
+.buttonWinAngel {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  border:  1px solid black;
+  border-radius: 40px;
+  color: yellow;
+  background-color: black;
+  opacity: 0.5;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  text-align: center;
+}
+
+.buttonWinDevil {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  border:  1px solid black;
+  border-radius: 40px;
+  color: red;
+  background-color: black;
+  opacity: 0.5;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  text-align: center;
+}
+
+.buttonWinDraw {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  border:  1px solid black;
+  border-radius: 40px;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  text-align: center;
+}
+
+.twoButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
